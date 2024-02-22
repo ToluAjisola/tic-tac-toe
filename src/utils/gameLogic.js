@@ -30,3 +30,18 @@ export const checkWinner = (board) => {
 
   return null; // No winner yet
 };
+
+// utils/gameLogic.js
+
+// Function to calculate CPU move
+export const calculateCPUMove = (board) => {
+  // Find the first empty cell and return its index
+  for (let i = 0; i < board.length; i++) {
+    for (let j = 0; j < board[i].length; j++) {
+      if (!board[i][j]) {
+        return [i, j]; // Return the row and column of the empty cell
+      }
+    }
+  }
+  return null; // Return null if the board is full
+};
