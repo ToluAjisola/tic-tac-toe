@@ -1,5 +1,7 @@
 # Simple Tic Tac Toe Game
 
+[Live Link](https://tic-tac-tolu.netlify.app) 
+
 
 # React + Vite
 
